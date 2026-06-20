@@ -17,6 +17,8 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "cloudinary_storage",
+    "cloudinary",
     "django.contrib.staticfiles",
 
     "rest_framework",
@@ -24,8 +26,6 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
     "django_ratelimit",
-    "cloudinary_storage",
-    "cloudinary",
 
     "projects",
     "services",
