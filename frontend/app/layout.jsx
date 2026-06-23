@@ -8,8 +8,13 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
 
+
+
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "kjE9tkIVYoAv_MirO7koJULMrChWzUwSiZKGyycCjMw",
+  },
   title: {
     default: "Friemann LOKONON - Développeur Web Fullstack Next.js & Django",
     template: "%s | Friemann LOKONON - Développeur Web Fullstack Freelance",
