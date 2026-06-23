@@ -3,6 +3,8 @@ from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from django_ratelimit.decorators import ratelimit
+from django.utils.decorators import method_decorator
 from .models import ContactMessage
 from .serializers import ContactMessageSerializer
 
@@ -10,6 +12,7 @@ from .serializers import ContactMessageSerializer
 class ContactMessageView(APIView):
     permission_classes = [AllowAny]
 
+    @method_decorator(ratelimit(key="ip", rate="5/10m", method="POST", block=True))
     def post(self, request):
         serializer = ContactMessageSerializer(data=request.data)
         if serializer.is_valid():
