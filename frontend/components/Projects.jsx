@@ -172,7 +172,7 @@ export default async function Projects() {
             </span>
           </h2>
           <p className="max-w-sm text-[14px] leading-relaxed text-white/35">
-            Une sélection de projets réels — de l'idée au déploiement en production.
+            Une sélection de projets réels — du déploiement à la production.
           </p>
         </div>
 

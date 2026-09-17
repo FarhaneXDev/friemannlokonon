@@ -17,7 +17,7 @@ const skills = [
 
 const timeline = [
   {
-    year: "2025 — Présent",
+    year: "2025 — Présentement",
     title: "Développeur Fullstack Freelance",
     sub: "Missions clients · Next.js & Django",
   },
@@ -28,7 +28,7 @@ const timeline = [
   },
   {
     year: "2021",
-    title: "Formation · ENSET (Électtronique)",
+    title: "Licence Professionnelle · ENSET (Électronique)",
     sub: "Cursus universitaire",
   },
 ];
@@ -95,8 +95,8 @@ export default function About() {
             <p className="text-[15px] leading-[1.75] tracking-[-0.003em] text-white/45">
               Je m'appelle{" "}
               <strong className="font-medium text-white/75">Friemann LOKONON</strong>,
-              développeur web Fullstack basé à{" "}
-              <strong className="font-medium text-white/75">Cotonou, Bénin</strong>. Je
+              développeur web Fullstack résidant au{" "}
+              <strong className="font-medium text-white/75">Bénin</strong>. Je
               conçois et développe des applications web modernes, performantes et
               évolutives pour des startups, PME et indépendants.
             </p>
